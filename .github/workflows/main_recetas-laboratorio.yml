@@ -26,6 +26,8 @@ jobs:
         node-version: ${{ env.NODE_VERSION }}
 
     - name: 'Resolve Project Dependencies Using Npm'
+      shell: bash
+
 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
