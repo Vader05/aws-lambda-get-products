@@ -34,7 +34,12 @@ const products = function () {
         },
         {
             id: 5,
-            name: 'Arros chaufa',
+            name: 'Arroz chaufa',
+            price: 25.5
+        },
+        {
+            id: 6,
+            name: 'Pollo a la cacerola',
             price: 25.5
         }
     ];
