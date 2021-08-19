@@ -29,11 +29,6 @@ jobs:
       shell: bash
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
-    
-    - name: 'exponiendo recetas'
-      functions:
-        index:
-          handler: src/index.getProducts
 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
