@@ -1,17 +1,6 @@
 'use strict';
-
-module.exports.getProducts = async (event) => {
-    // TODO implement
-    const response = {
-        statusCode: 200,
-        body: products(),
-    };
-    return response;
-};
-
-
-const products = function () {
-    return [
+const products =  {
+     datos : [
         {
             id: 1,
             name: 'Lomo Saltado',
@@ -47,5 +36,16 @@ const products = function () {
             name: 'Pollo a la brasa',
             price: 25.5
         }
-    ];
+    ]
 }
+
+module.exports.getProducts =  () => {
+    // TODO implement
+    const response = {
+        statusCode: 200,
+        body: products,
+    };
+    return response;
+};
+
+
