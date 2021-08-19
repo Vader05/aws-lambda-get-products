@@ -28,7 +28,12 @@ jobs:
     - name: 'Resolve Project Dependencies Using Npm'
       shell: bash
       run: |
-        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/src/index.getProducts'
+        pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}'
+    
+    - name: 'exponiendo recetas'
+      functions:
+        index:
+          handler: src/index.getProducts
 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
