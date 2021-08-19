@@ -41,6 +41,11 @@ const products = function () {
             id: 6,
             name: 'Pollo a la cacerola',
             price: 25.5
+        },
+        {
+            id: 7,
+            name: 'Pollo a la brasa',
+            price: 25.5
         }
     ];
 }
