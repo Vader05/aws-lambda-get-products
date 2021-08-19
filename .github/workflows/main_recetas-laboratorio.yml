@@ -38,3 +38,7 @@ jobs:
         slot-name: 'production'
         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_9a8e821ce5184bebab6328b4b5e210dd }}
+
+functions:
+  index:
+    handler: src/index.getProducts
