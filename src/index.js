@@ -35,6 +35,11 @@ const products =  {
             id: 7,
             name: 'Pollo a la brasa',
             price: 25.5
+        },
+        {
+            id: 8,
+            name: 'Pollo a la olla',
+            price: 45.5
         }
     ]
 }
